@@ -1,0 +1,20 @@
+name: "browser-js-executor"
+description: "Evaluates JavaScript snippets on active browser tabs with mutation monitoring."
+input_schema:
+  type: object
+  properties:
+    script:
+      type: string
+      description: "JavaScript code string to evaluate."
+    switch_tab_id:
+      type: string
+      description: "Optional tab ID to focus before executing code."
+    no_monitor:
+      type: boolean
+      description: "Whether to skip waiting for DOM mutations (useful for pure read operations)."
+      default: false
+    save_to_file:
+      type: string
+      description: "Optional file path to persist large execution return payloads."
+  required:
+    - script

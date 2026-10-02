@@ -1,0 +1,17 @@
+name: "browser-dom-scanner"
+description: "Retrieves simplified, clutter-free DOM structures and tab lists from active browser sessions."
+input_schema:
+  type: object
+  properties:
+    tabs_only:
+      type: boolean
+      description: "Whether to return only the list of open tabs without page HTML."
+      default: false
+    switch_tab_id:
+      type: string
+      description: "Optional tab ID to switch active context to before scanning."
+    text_only:
+      type: boolean
+      description: "Whether to extract plain readable text only without HTML markup."
+      default: false
+  required: []

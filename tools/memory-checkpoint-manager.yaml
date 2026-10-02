@@ -1,0 +1,18 @@
+name: "memory-checkpoint-manager"
+description: "Updates short-term working notepads and distills long-term global memory insights."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      enum:
+        - "update_working_checkpoint"
+        - "update_global_memory"
+        - "read_insights"
+      description: "Memory tier operation to perform."
+    key_info:
+      type: string
+      description: "Summary information to record in the active working notepad or global insight store."
+  required:
+    - action
+    - key_info

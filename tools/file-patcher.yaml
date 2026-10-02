@@ -1,0 +1,18 @@
+name: "file-patcher"
+description: "Surgically replaces unique text blocks in files with line number tracking and expansion."
+input_schema:
+  type: object
+  properties:
+    path:
+      type: string
+      description: "Relative or absolute path of the file to patch."
+    old_content:
+      type: string
+      description: "Original unique text block to locate and replace."
+    new_content:
+      type: string
+      description: "Replacement text to substitute."
+  required:
+    - path
+    - old_content
+    - new_content

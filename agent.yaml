@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: "genericagent"
+version: "0.1.0"
+description: "Minimalist self-evolving autonomous agent framework with plugin reflection, multi-frontend bots, and web automation."
+author: "GenericAgent Contributors & OpenGAP Contributors"
+license: "MIT"
+metadata:
+  domain: "Developer Tools / Self-Evolving Autonomous Agents & Web Automation"
+  category: "Developer Tools"
+  framework: "GenericAgent Python Runtime & Plugin Reflection Core"
+  language: "Python"
+skills:
+  - "autonomous-code-execution"
+  - "browser-automation-inspection"
+  - "file-manipulation-patching"
+  - "hierarchical-memory-reflection"
+tools:
+  - "code-runner"
+  - "file-patcher"
+  - "browser-dom-scanner"
+  - "browser-js-executor"
+  - "memory-checkpoint-manager"

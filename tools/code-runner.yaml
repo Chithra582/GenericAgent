@@ -1,0 +1,25 @@
+name: "code-runner"
+description: "Executes Python or shell scripts with cwd support, timeout enforcement, and stream capture."
+input_schema:
+  type: object
+  properties:
+    script:
+      type: string
+      description: "Code or script string to execute."
+    type:
+      type: string
+      enum:
+        - "python"
+        - "powershell"
+        - "bash"
+      description: "Script execution runtime."
+      default: "python"
+    timeout:
+      type: integer
+      description: "Maximum execution time in seconds."
+      default: 60
+    cwd:
+      type: string
+      description: "Working directory path, defaults to workspace root."
+  required:
+    - script
